@@ -9,3 +9,11 @@
 - cd /usr/src/wmic
 - make "CPP=gcc -E -ffreestanding",
 - cp Samba/source/bin/wmic /usr/local/bin/
+
+### How to Test it
+- #Get system information
+- #./wmic -U[user]%[password] //[host/ip] "[WMI Query]"
+- wmic -U administrator --password=very-secure-password //78.46.41.48 "SELECT * FROM Win32_OperatingSystem"
+
+- Get list of running processes
+- wmic -U administrator --password=very-secure-password //78.46.41.48 "select caption, name, parentprocessid, processid from win32_process"
