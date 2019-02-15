@@ -4,7 +4,9 @@
 - In Samba/source/pidl/pidl line 583 I already removed the word defined before @$pidl
 
 ### How to Compile
+- Tested on Debian 9 Stretch
 - cd /usr/src/
+- apt-get install autoconf gcc libdatetime-perl make build-essential g++ python-dev
 - git clone git@github.com:astbss/wmic.git
 - cd /usr/src/wmic
 - make "CPP=gcc -E -ffreestanding",
