@@ -14,7 +14,7 @@
 
 ### How to Test it
 - **Get system information**
-- wmic -U administrator --password=very-secure-password //78.46.41.48 "SELECT * FROM Win32_OperatingSystem"
+- wmic -U administrator --password=very-secure-password //10.10.10.10 "SELECT * FROM Win32_OperatingSystem"
 
 - **Get list of running processes**
-- wmic -U administrator --password=very-secure-password //78.46.41.48 "select caption, name, parentprocessid, processid from win32_process"
+- wmic -U administrator --password=very-secure-password //10.10.10.10 "select caption, name, parentprocessid, processid from win32_process"
